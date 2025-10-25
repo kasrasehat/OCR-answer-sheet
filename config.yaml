@@ -1,0 +1,9 @@
+path: E:/codes_py/OCR-answer-sheet/data
+
+train: E:/codes_py/OCR-answer-sheet/data/train
+
+val: E:/codes_py/OCR-answer-sheet/data/validation
+
+names:
+  0: sheet
+  

@@ -9,10 +9,43 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Model files
+# Model files and weights
 *.pt
 *.pth
+*.onnx
+*.engine
+*.trt
+
+# Training outputs and runs
+runs/
+training_output/
+models/
+weights/
+
+# Dataset and data
+data/
+datasets/
+*.zip
+*.tar.gz
+*.7z
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # OS-specific files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
