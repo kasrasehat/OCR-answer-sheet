@@ -25,6 +25,7 @@ weights/
 # Dataset and data
 data/
 datasets/
+garbage/
 *.zip
 *.tar.gz
 *.7z

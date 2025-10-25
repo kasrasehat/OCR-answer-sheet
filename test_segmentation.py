@@ -22,15 +22,15 @@ def save_image(image, path):
     cv2.imwrite(path, image)
 
 
-model = YOLO("/home/kasra/PycharmProjects/YOLOv8_customize/runs/segment/predict_val/weights/best.pt")  # load a pretrained model (recommended for training)
-img = '/home/kasra/kasra_files/data-shenasname/ai_files_20230606/0010049681_0.jpg'  # or file, Path, PIL, OpenCV, numpy, list
+model = YOLO("E:/codes_py/OCR-answer-sheet/runs/segment/train3/weights/best.pt")  # load a pretrained model (recommended for training)
+img = 'E:/codes_py/OCR-answer-sheet/data/validation/images/fc3bc58e-1450425.jpg'  # or file, Path, PIL, OpenCV, numpy, list
 image = cv2.imread(img)
-new_width = 720
-new_height = 720
-# Resize the image
-image = cv2.resize(image, (new_width, new_height))
+# new_width = 720
+# new_height = 720
+# # Resize the image
+# image = cv2.resize(image, (new_width, new_height))
 # Inference
-img = '/home/kasra/PycharmProjects/YOLOv8_customize/extra_files/image1.jpg'
+img = 'E:/codes_py/OCR-answer-sheet/garbage/image1.jpg'
 
 save_image(image, img)
 results = model.predict(img, save=True, imgsz=640, conf=0.3, save_txt=True, show=False)
