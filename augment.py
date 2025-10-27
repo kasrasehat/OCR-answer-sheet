@@ -17,7 +17,7 @@ class Augmentor:
         image = Image.open(image_path)
 
         # Randomly scale the image
-        scale = random.uniform(0.2, 0.6)
+        scale = random.uniform(0.5, 0.9)
         new_size = (int(image.width * scale), int(image.height * scale))
         image = image.resize(new_size, Image.LANCZOS)
 

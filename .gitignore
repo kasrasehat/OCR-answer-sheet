@@ -29,6 +29,22 @@ garbage/
 *.zip
 *.tar.gz
 *.7z
+*.rar
+*.bak
+
+# Notebooks and checkpoints
+*.ipynb
+.ipynb_checkpoints/
+checkpoints/
+
+# Images and large dumps (keep code small)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+*.tif
+*.tiff
 
 # IDE and editor files
 .vscode/
@@ -50,3 +66,4 @@ logs/
 *.tmp
 *.temp
 .cache/
+.tmp/

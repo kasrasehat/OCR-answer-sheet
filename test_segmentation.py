@@ -22,15 +22,15 @@ def save_image(image, path):
     cv2.imwrite(path, image)
 
 
-model = YOLO("E:/codes_py/OCR-answer-sheet/runs/segment/train3/weights/best.pt")  # load a pretrained model (recommended for training)
-img = 'E:/codes_py/OCR-answer-sheet/data/validation/images/fc3bc58e-1450425.jpg'  # or file, Path, PIL, OpenCV, numpy, list
+model = YOLO("D:/Projects/OCR-answer-sheet/runs/segment/train11/weights/best.pt")  # load a pretrained model (recommended for training)
+img = 'D:/data/OCR/all_jpg/1447353.jpg'  # or file, Path, PIL, OpenCV, numpy, list
 image = cv2.imread(img)
 # new_width = 720
 # new_height = 720
 # # Resize the image
 # image = cv2.resize(image, (new_width, new_height))
 # Inference
-img = 'E:/codes_py/OCR-answer-sheet/garbage/image1.jpg'
+img = 'D:/Projects/OCR-answer-sheet/garbage/image1.jpg'
 
 save_image(image, img)
 results = model.predict(img, save=True, imgsz=640, conf=0.3, save_txt=True, show=False)
